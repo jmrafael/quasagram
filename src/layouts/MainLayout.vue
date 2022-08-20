@@ -19,6 +19,26 @@
       </q-toolbar>
     </q-header>
 
+    <q-footer
+      class="bg-white"
+             bordered
+
+    >
+        <q-tabs
+          class="text-grey-10"
+          active-color="primary"
+          indicator-color="transparent"
+        >
+          <q-route-tab
+            to="/"
+            icon="eva-home-outline"
+          />
+          <q-route-tab
+            to="/camera"
+            icon="eva-camera-outline"
+          />
+        </q-tabs>
+    </q-footer>
 
     <q-page-container>
       <router-view />
@@ -38,3 +58,10 @@ export default defineComponent({
   }
 })
 </script>
+
+
+<style lang="sass">
+  .q-footer
+    .q-tab__icon
+      font-size: 30px
+</style>
