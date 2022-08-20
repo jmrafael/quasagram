@@ -8,6 +8,6 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'CameraPage'
+  name: 'Page Camera'
 })
 </script>
